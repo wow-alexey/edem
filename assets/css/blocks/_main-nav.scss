@@ -1,0 +1,47 @@
+.main-nav {
+  background: $green;
+  @include media(">=tablet-landscape") {
+    padding: 0 15px;
+  }
+}
+
+.main-nav-content {
+  display: flex;
+  font-family: cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  @include media(">=tablet-landscape") {
+    flex-direction: row;
+  }
+  li {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    @include media(">=tablet-landscape") {
+      padding: 48px 43px;
+      width: auto;
+    }
+    @include media(">=desktop") {
+      padding: 96px 84px;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  .active {
+    background: $light-green;
+    a {
+      color: $black;
+    }
+  }
+  a {
+    color: $white;
+    font-family: $LatoSemibold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

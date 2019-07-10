@@ -1,0 +1,104 @@
+.footer {
+  margin-top: 214px;
+  background: $footer-bg;
+  padding: 45px 0;
+  color: $white;
+  .logo {
+    display: inline-block;
+    width: 96px;
+    height: 97px;
+  }
+  .social {
+    a {
+      border-color: $footer-color;
+      &:hover {
+        border-color: $green;
+      }
+    }
+    svg {
+      fill:$footer-color;
+    }
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @include media(">=tablet-landscape") {
+    flex-direction: row;
+  }
+}
+
+.fc-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include media(">=tablet-landscape") {
+    flex-direction: row;
+  }
+  .address-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media(">=tablet-landscape") {
+      margin-left: 28px;
+      align-items: flex-start;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  p {
+    margin: 0;
+    text-indent: 0;
+    text-align: center;
+    @include media(">=tablet-landscape") {
+      text-align: left;
+    }
+  }
+  address {
+    font-style: normal;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: $LatoLight;
+    font-size: 14px;
+  }
+}
+
+.fc-middle {
+  //display: flex;
+  //flex-direction: column-reverse;
+  .social {
+    margin-top: 58px;
+
+  }
+}
+
+.fc-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  @include media(">=tablet-landscape") {
+    margin-top: 0;
+    align-items: flex-end;
+  }
+  span {
+    font-size: 14px;
+    font-family: $LatoLight;
+    &+span {
+      margin-top: 50px;
+    }
+    a {
+      color: $white;
+      font-family: $LatoSemibold;
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+}

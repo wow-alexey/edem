@@ -1,0 +1,42 @@
+.page-404 {
+  margin-top: 149px;
+  .content {
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  h3, .h3 {
+    left: 0;
+    top: 62px;
+    width: 100%;
+    margin: 0 0 50px;
+    @include media(">=tablet-landscape") {
+      position: absolute;
+      max-width: 416px;
+      margin: 0;
+    }
+  }
+  span {
+    font-size: 150px;
+    font-family: $LatoBold;
+    color: #f3f3f3;
+    line-height: 1;
+    @include media(">=tablet-landscape") {
+      font-size: 300px;
+
+    }
+    @include media(">=desktop") {
+      font-size: 500px;
+
+    }
+  }
+  img {
+    max-width: 100%;
+    display: inline-block;
+    top: -113px;
+    right: -107px;
+    @include media(">=tablet-landscape") {
+      position: absolute;
+    }
+  }
+}
